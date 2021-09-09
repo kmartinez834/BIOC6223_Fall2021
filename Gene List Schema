@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://w3id.org/ieee/ieee-2791-schema/description_domain.json", #Fill in correct url
+    "type": "object",
+    "title": "Gene List",
+    "description": "Base pair length and accession number of a gene",
+    "required": [
+        "name",
+        "bp length",
+        "accession number"
+    ],
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of gene",
+            "examples": [
+                "Homo sapiens partial HLA-A gene for MHC class I antigen"
+              ]
+        },
+        "bp length": {
+            "type": "integer",
+            "description": "Number of base pairs"
+        },
+        "accession number": {
+            "type": "string",
+            "description": "Accession number",
+            "examples": [
+                "OU596126"
+              ]
+        }
+    }
+}
