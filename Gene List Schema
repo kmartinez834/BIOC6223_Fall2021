@@ -3,17 +3,17 @@
     "$id": "https://raw.githubusercontent.com/kmartinez834/BIOC6223/main/Gene%20List%20Schema",
     "type": "object",
     "title": "Gene List",
-    "description": "Base pair length and accession number of a gene",
+    "description": "Structured field for description of base pair length and accession number of a gene.",
     "required": [
         "genes"
     ],
     "properties": {
         "genes": {
             "type": "array",
-            "description": "List of genes",
+            "description": "Selected genes from NCBI neucleotide database.",
             "items": {
                 "type": "object",
-                "description": "Gene details",
+                "description": "Gene details including name, base pair length and accession number.",
                 "required": [
                     "name",
                     "bp length",
@@ -21,12 +21,12 @@
                 ],
                 "properties": {
                     "name": {
-                    "type": "string",
-                    "description": "Name of gene",
-                    "examples": [
-                        "Homo sapiens partial HLA-A gene for MHC class I antigen"
-                    ]
-                },
+                        "type": "string",
+                        "description": "Name or abbreviation of gene.",
+                        "examples": [
+                            "Homo sapiens partial HLA-A gene for MHC class I antigen"
+                        ]
+                    },
                     "bp length": {
                         "type": "integer",
                         "description": "Number of base pairs"
