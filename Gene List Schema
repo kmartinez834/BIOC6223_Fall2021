@@ -5,6 +5,11 @@
     "title": "Gene List",
     "description": "Base pair length and accession number of a gene",
     "required": [
+        "genes"
+        ],
+    
+    
+    "required": [
         "name",
         "bp length",
         "accession number"
